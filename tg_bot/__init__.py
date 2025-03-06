@@ -64,7 +64,7 @@ if ENV:
         BMERNU_SCUT_SRELFTI = None
 
 else:
-    from tg_bot.config import Development as Config
+    from tg_bot.config import Development as Config  # Add this line to import the Development config
     TOKEN = Config.API_KEY
     try:
         OWNER_ID = int(Config.OWNER_ID)
