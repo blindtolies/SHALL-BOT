@@ -15,7 +15,7 @@ Can be found on telegram as [കൊച്ചുമുതലാളി](https://t.
 
 Kochu and I are moderating a [support group](https://t.me/ELSupport), where you can ask for help setting up your
 bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available. Of course
-I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to read any new commits.
+I'll also help when a database schema changes, and some table column needs to be modified/added. Note to maintainers that all schema changes will be found in the commit messages, and its their responsibility to apply them.
 
 Join the [news channel](https://t.me/ELUpdates) if you just want to stay in the loop about new features or
 announcements.
@@ -23,11 +23,10 @@ announcements.
 Alternatively, [find me on telegram](https://t.me/jithumon)! (Keep all support questions in the support chat, where more people can help you.)
 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jithumon/tgbot)<br>
-There is also a [tutorial video](https://youtu.be/W6CLKrehy6w) if you want any help on creating heroku clone.
+[![Deploy](https://www.pythonanywhere.com/static/anywhere/images/logo-156x80.png)](https://www.pythonanywhere.com)  
+There is also a [tutorial video](https://youtu.be/W6CLKrehy6w) if you want any help on creating Heroku clone.
 [![telegram badge](https://img.shields.io/badge/Support-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/ELSupport)
 [![telegram badge](https://img.shields.io/badge/Update-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/ELUpdates)
-
 
 
 ## Starting the bot.
@@ -70,7 +69,7 @@ class Development(Config):
     NO_LOAD = ['translation']
 ```
 
-If you can't have a config.py file (EG on heroku), it is also possible to use environment variables.
+If you can't have a config.py file (EG on Heroku), it is also possible to use environment variables.
 The following env variables are supported:
  - `ENV`: Setting this to ANYTHING will enable env variables
 
@@ -97,7 +96,7 @@ The following env variables are supported:
  - `DEL_CMDS`: Whether to delete commands from users which don't have rights to use that command
  - `STRICT_GBAN`: Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.
  - `WORKERS`: Number of threads to use. 8 is the recommended (and default) amount, but your experience may vary.
- __Note__ that going crazy with more threads wont necessarily speed up your bot, given the large amount of sql data 
+  __Note__ that going crazy with more threads wont necessarily speed up your bot, given the large amount of sql data 
  accesses, and the way python asynchronous calls work.
  - `BAN_STICKER`: Which sticker to use when banning people.
  - `ALLOW_EXCL`: Whether to allow using exclamation marks ! for commands as well as /.
