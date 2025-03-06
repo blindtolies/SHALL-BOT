@@ -12,7 +12,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/jithumon/tgbot",
+  "repository": "https://github.com/blindtolies/SHALL-Bot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
@@ -34,7 +34,7 @@
       "value": "ANYTHING"
     },
     "URL": {
-      "description": "The Heroku App URL similar to https://<appname>.herokuapp.com/"
+      "description": "The URL your webhook should connect to (only needed for webhook mode)"
     },
     "MESSAGE_DUMP": {
       "description": "optional: a chat where your replied saved messages are stored, to stop people deleting their old",
@@ -83,15 +83,8 @@
       "required": false
     }
   },
-  "addons": [
-    {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
-    }
-  ],
-  "stack": "heroku-20",
+  "addons": [],
+  "stack": "python-3.8",
   "buildpacks": [],
   "formation": {
     "web": {
