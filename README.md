@@ -1,4 +1,4 @@
-# tgbot❤
+# SHALLbot 💀
 ![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+SHAKKbot's's+Repo!;A+simple+Group+modular+bot!;and+all+futures!)
 </p>
 <center><img src="https://a.imgfoto.host/2025/03/06/fgdgfdgfdgfdffgdf.jpeg"></center>
